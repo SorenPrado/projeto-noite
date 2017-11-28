@@ -1,0 +1,9 @@
+---
+- hosts: wordpress
+  remote_user: sorenprado
+  become: yes
+  roles:
+   - mysql
+   - php
+   - server
+   - wordpress
