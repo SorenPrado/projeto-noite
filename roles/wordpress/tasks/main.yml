@@ -7,7 +7,10 @@
   validate_certs: no
   
 - name: Descompacta o WordPress
-  unarchive: src=/tmp/wordpress.tar.gz dest=/var/www/ copy: no
+unarchive:
+  src: /tmp/wordpress.tar.gz
+  dest: /var/www/
+  copy: no
 
 - name: Atualiza o site Apache padrao
   lineinfile:
