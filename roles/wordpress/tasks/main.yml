@@ -17,6 +17,6 @@
     dest: /etc/apache2/sites-enabled/000-default.conf
     regexp: "(.)+DocumentRoot /var/www/html"
     line: "DocumentRoot /var/www/wordpress"
-notify:
+  notify:
 - reinicia apache
 
