@@ -7,7 +7,7 @@
   validate_certs: no
   
 - name: Descompacta o WordPress
-unarchive:
+  unarchive:
   src: /tmp/wordpress.tar.gz
   dest: /var/www/
   copy: no
